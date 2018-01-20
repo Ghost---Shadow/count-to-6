@@ -10,4 +10,4 @@ module.exports.mapReduce = mapReduce;
 
 const inputs = process.argv.slice(2);
 
-console.log(mapReduce(inputs));
+console.log(`[${inputs}] becomes "${mapReduce(inputs)}"`);
