@@ -5,3 +5,14 @@ test('Objects must be equal', () => {
   const expectation = { username: 'b', email: 'c' };
   expect(q5.arrayToObj(inputArray)).toEqual(expectation);
 });
+
+test('Empty array', () => {
+  const inputArray = [];
+  expect(q5.arrayToObj(inputArray)).toEqual(null);
+});
+
+test('Small array', () => {
+  const inputArray = ['a'];
+  expect(q5.arrayToObj(inputArray)).toEqual(null);
+});
+
