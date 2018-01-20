@@ -3,13 +3,13 @@
  * @param {String} username
  * @return {String}
  */
-function greetUser(username) {
-    if (!username) {
-        return 'Error: Username cannot be null or undefined.';
-    }
-    username = username.toString();
-    let greeting = `Hello, ${username}!\nYour name lowercased is "${username.toLowerCase()}".`;
-    return greeting;
+function greetUser(usernameArgument) {
+  if (!usernameArgument) {
+    return 'Error: Username cannot be null or undefined.';
+  }
+  const username = usernameArgument.toString();
+  const greeting = `Hello, ${username}!\nYour name lowercased is "${username.toLowerCase()}".`;
+  return greeting;
 }
 
 module.exports.greetUser = greetUser;

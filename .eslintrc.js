@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": "google",
+    "extends": "airbnb",
     "env":{
         "node": true,
         "es6":true
