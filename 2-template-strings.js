@@ -4,6 +4,10 @@
  * @return {String}
  */
 function greetUser(username) {
+    if (!username) {
+        return 'Error: Username cannot be null or undefined.';
+    }
+    username = username.toString();
     let greeting = `Hello, ${username}!\nYour name lowercased is "${username.toLowerCase()}".`;
     return greeting;
 }
