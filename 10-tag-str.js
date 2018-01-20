@@ -1,5 +1,4 @@
 function html(format, user, text) {
-  console.log(format, user, text);
   let sanitizedText = text;
 
   const replaceables = [
