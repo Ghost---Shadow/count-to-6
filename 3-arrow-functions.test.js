@@ -11,3 +11,9 @@ test('Empty string case', () => {
   const expectedString = '';
   expect(q3.mapReduce(inputArray)).toBe(expectedString);
 });
+
+test('Null case', () => {
+  const inputArray = ['', null, ''];
+  const expectedString = '';
+  expect(q3.mapReduce(inputArray)).toBe(expectedString);
+});
