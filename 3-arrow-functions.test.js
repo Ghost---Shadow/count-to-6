@@ -5,3 +5,9 @@ test('Ideal case', () => {
   const expectedString = 'adg';
   expect(q3.mapReduce(inputArray)).toBe(expectedString);
 });
+
+test('Empty string case', () => {
+  const inputArray = ['', '', ''];
+  const expectedString = '';
+  expect(q3.mapReduce(inputArray)).toBe(expectedString);
+});
