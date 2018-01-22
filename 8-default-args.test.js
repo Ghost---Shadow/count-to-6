@@ -9,5 +9,13 @@ test('Lower missing', () => {
 });
 
 test('Upper Missing', () => {
+  expect(midpoint(0.1, undefined)).toBeCloseTo(0.55);
+});
+
+test('One parameter', () => {
   expect(midpoint(0.1)).toBeCloseTo(0.55);
+});
+
+test('Both missing', () => {
+  expect(midpoint()).toBeCloseTo(0.5);
 });
