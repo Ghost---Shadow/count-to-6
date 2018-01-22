@@ -1,4 +1,2 @@
-module.exports = function makeImportant(text, num = text.length) {
-  return text + '!'.repeat(num);
-};
-
+const makeImportant = (text, num = text.length) => text + '!'.repeat(num);
+module.exports = makeImportant;
